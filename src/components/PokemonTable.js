@@ -35,7 +35,7 @@ const PokemonTable = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/get-pokemon")
+      .get("https://pxg-balls-backend.onrender.com/get-pokemon")
       .then((response) => {
         setPokemonData(response.data);
         setFilteredData(response.data);
